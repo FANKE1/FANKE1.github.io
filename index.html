@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="9 大主流 AI 平台 Coding Plan 套餐对比：智谱AI、Kimi、MiniMax、小米·MiMo、字节·方舟、阿里·百炼、百度·千帆、腾讯云、讯飞·星火，价格、模型、用量一目了然。">
+  <title>AI Coding Plan 对比 · 9 大主流平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 顶部 hero -->
+  <section class="hero">
+    <div class="update-pill">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
+      <span id="updatePillText">更新日期 2026.6.13 | 9 大主流平台首发</span>
+    </div>
+    <h1>AI Coding Plan 对比</h1>
+    <p class="hero-sub">
+      九大平台 智谱AI、Kimi、MiniMax、小米·MiMo、字节·方舟、阿里·百炼、百度·千帆、腾讯云、讯飞·星火，全面对比
+    </p>
+    <p class="hero-models">
+      <svg viewBox="0 0 24 24" fill="#f5a623" width="16" height="16"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
+      支持 GLM-5.1、DeepSeek-V4-Pro、Qwen-3.7-Max、Kimi-K2.6、MiniMax-M3、Doubao-Seed-Code、MiMo-V2.5-Pro 等模型
+    </p>
+  </section>
+
+  <!-- 搜索 -->
+  <section class="search-wrap">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+        <circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path>
+      </svg>
+      <input id="searchInput" type="text" placeholder="搜索平台、套餐或模型...">
+    </div>
+  </section>
+
+  <!-- 平台 chip 居中 -->
+  <section class="vendor-bar" id="vendorBar"></section>
+
+  <!-- 统计 -->
+  <div class="stats">显示 <strong id="statsCount">0</strong> <span id="statsTotal">/ 0</span> 个套餐</div>
+
+  <!-- 表格 -->
+  <section class="table-section">
+    <div class="table-card">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="sortable" data-col="vendor">平台</th>
+              <th class="sortable" data-col="plan">套餐</th>
+              <th class="sortable" data-col="type">类型</th>
+              <th class="col-action">跳转</th>
+              <th class="sortable" data-col="firstMonthPrice">首月价格</th>
+              <th class="sortable" data-col="monthlyPrice">连续包月</th>
+              <th class="sortable" data-col="quarterlyPrice">连续包季</th>
+              <th class="sortable" data-col="yearlyPrice">连续包年</th>
+              <th>支持模型</th>
+              <th class="sortable" data-col="fiveHoursRequests">5小时/请求数</th>
+              <th class="sortable" data-col="weeklyRequests">每周/请求数</th>
+              <th class="sortable" data-col="monthlyRequests">每月/请求数</th>
+              <th class="sortable" data-col="measuredMonthlyTokenLimit">月实测Token</th>
+              <th>Token 上限</th>
+              <th>其他权益</th>
+              <th class="col-note">备注</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr><td colspan="16"><div class="empty">加载中…</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-card">
+      <h3 class="footer-title">
+        <svg class="footer-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        说明
+      </h3>
+      <ul>
+        <li>使用表格邀请链接，部分平台可享优惠</li>
+        <li>本页面数据仅供参考，价格及权益最终以平台官方公布为准，建议在选择套餐前仔细阅读各平台的官方条款和服务协议</li>
+      </ul>
+      <div class="footer-meta">
+        <span>数据来源：各大平台官方定价页面</span>
+        <span class="footer-meta-sep">|</span>
+        <span>数据更新时间：<span id="footerUpdateDate">2026.6.13</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 右下角浮动反馈 -->
+  <a class="float-feedback" href="https://github.com/FANKE1/FANKE1.github.io/issues" target="_blank" rel="noopener" title="GitHub 反馈">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+    </svg>
+    <span>反馈</span>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

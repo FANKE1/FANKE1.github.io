@@ -1,0 +1,1233 @@
+[
+  {
+    "vendor": "智谱AI",
+    "plan": "Lite",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://www.bigmodel.cn/glm-coding?ic=FLHSHZZSVC",
+    "firstMonthPrice": 46.55,
+    "monthlyPrice": 49,
+    "quarterlyPrice": 132.3,
+    "yearlyPrice": 470.4,
+    "models": [
+      "GLM-5.1",
+      "GLM-5-Turbo"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 6000,
+    "monthlyRequests": 24000,
+    "tokenLimit": "无限制",
+    "benefits": [
+      "免费MCP次数"
+    ],
+    "measuredFiveHoursTokenLimit": 6,
+    "measuredWeeklyTokenLimit": 30,
+    "measuredMonthlyTokenLimit": 120,
+    "note": "• 3倍Claude Pro用量。官方以prompt计数，这里按1 prompt≈15次请求换算\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "智谱AI",
+    "plan": "Pro",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://www.bigmodel.cn/glm-coding?ic=FLHSHZZSVC",
+    "firstMonthPrice": 141.55,
+    "monthlyPrice": 149,
+    "quarterlyPrice": 402.3,
+    "yearlyPrice": 1430.4,
+    "models": [
+      "GLM-5.1",
+      "GLM-5-Turbo",
+      "GLM-5"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 30000,
+    "monthlyRequests": 120000,
+    "tokenLimit": "无限制",
+    "benefits": [
+      "免费MCP次数"
+    ],
+    "measuredFiveHoursTokenLimit": 30,
+    "measuredWeeklyTokenLimit": 150,
+    "measuredMonthlyTokenLimit": 600,
+    "note": "• 5倍Lite用量。官方以prompt计数，这里按1 prompt≈15次请求换算\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "智谱AI",
+    "plan": "Max",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://www.bigmodel.cn/glm-coding?ic=FLHSHZZSVC",
+    "firstMonthPrice": 445.55,
+    "monthlyPrice": 469,
+    "quarterlyPrice": 1266.3,
+    "yearlyPrice": 4502.4,
+    "models": [
+      "GLM-5.1",
+      "GLM-5-Turbo",
+      "GLM-5"
+    ],
+    "fiveHoursRequests": 24000,
+    "weeklyRequests": 120000,
+    "monthlyRequests": 480000,
+    "tokenLimit": "无限制",
+    "benefits": [
+      "免费MCP次数"
+    ],
+    "measuredFiveHoursTokenLimit": 120,
+    "measuredWeeklyTokenLimit": 600,
+    "measuredMonthlyTokenLimit": 2400,
+    "note": "• 20倍Lite用量。官方以prompt计数，这里按1 prompt≈15次请求换算\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Andante",
+    "type": "Coding Plan",
+    "rating": 4,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://platform.moonshot.cn/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 49,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 468,
+    "models": [
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 15,
+    "measuredWeeklyTokenLimit": 21,
+    "measuredMonthlyTokenLimit": 84,
+    "note": "Agent 4 倍速"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Moderato",
+    "type": "Coding Plan",
+    "rating": 4,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://platform.moonshot.cn/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 99,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 948,
+    "models": [
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "4 倍额度, Agent 多任务并行"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Allegretto",
+    "type": "Coding Plan",
+    "rating": 4,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://platform.moonshot.cn/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 199,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1908,
+    "models": [
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "tokenLimit": "无限制",
+    "benefits": [
+      "免费Kimi-Claw"
+    ],
+    "measuredFiveHoursTokenLimit": 65,
+    "measuredWeeklyTokenLimit": 357,
+    "measuredMonthlyTokenLimit": 1428,
+    "note": "20 倍额度"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Allegro",
+    "type": "Coding Plan",
+    "rating": 4,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://platform.moonshot.cn/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 699,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 6708,
+    "models": [
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "tokenLimit": "无限制",
+    "benefits": [
+      "免费Kimi-Claw"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "60 倍额度"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Starter",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 26.1,
+    "monthlyPrice": 29,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 290,
+    "models": [
+      "MiniMax-M3",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 600,
+    "weeklyRequests": 6000,
+    "monthlyRequests": 24000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 24,
+    "measuredWeeklyTokenLimit": 240,
+    "measuredMonthlyTokenLimit": 960,
+    "note": "• Token Plan 升级后保留档，仅老用户可续订\n• 支持 M3 与多模态，和 M2.7 共享额度池\n• 若中途断订，后续不可再次订阅同档"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Plus",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 44.1,
+    "monthlyPrice": 49,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 490,
+    "models": [
+      "MiniMax-M3",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 1500,
+    "weeklyRequests": 15000,
+    "monthlyRequests": 60000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 600,
+    "note": "• 当前公开订阅档位\n• 支持 M3 与多模态，和 M2.7 共享额度池\n• 套餐额度受 5 小时窗口与周窗口控制"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Plus",
+    "type": "Token Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 44.1,
+    "monthlyPrice": 49,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 490,
+    "models": [
+      "MiniMax-M3",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 1500,
+    "weeklyRequests": 15000,
+    "monthlyRequests": 60000,
+    "tokenLimit": 600,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 600,
+    "note": "• 当前公开订阅档位\n• 支持 M3 与多模态，和 M2.7 共享额度池\n• 套餐额度受 5 小时窗口与周窗口控制"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Plus-极速",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 88.2,
+    "monthlyPrice": 98,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 980,
+    "models": [
+      "MiniMax-M3-highspeed",
+      "MiniMax-M2.7-highspeed",
+      "MiniMax-M2.5-highspeed"
+    ],
+    "fiveHoursRequests": 1500,
+    "weeklyRequests": 15000,
+    "monthlyRequests": 60000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 60,
+    "measuredWeeklyTokenLimit": 600,
+    "measuredMonthlyTokenLimit": 2400,
+    "note": "• 约100TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Max",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 107.1,
+    "monthlyPrice": 119,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1190,
+    "models": [
+      "MiniMax-M3",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 4500,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 180000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 1800,
+    "note": "• 约50TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Max",
+    "type": "Token Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 107.1,
+    "monthlyPrice": 119,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1190,
+    "models": [
+      "MiniMax-M3",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 4500,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 180000,
+    "tokenLimit": 1800,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 1800,
+    "note": "• 当前公开订阅档位\n• 支持 M3 与多模态，和 M2.7 共享额度池\n• 套餐额度受 5 小时窗口与周窗口控制"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Max-极速",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 179.1,
+    "monthlyPrice": 199,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1990,
+    "models": [
+      "MiniMax-M3-highspeed",
+      "MiniMax-M2.7-highspeed",
+      "MiniMax-M2.5-highspeed"
+    ],
+    "fiveHoursRequests": 4500,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 180000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 180,
+    "measuredWeeklyTokenLimit": 1800,
+    "measuredMonthlyTokenLimit": 7200,
+    "note": "• 官方已停售并迁移至新版 Max\n• 迁移后月费 199→119，并补发差价积分\n• 新方案支持 M3 与多模态"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Ultra",
+    "type": "Token Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://platform.minimaxi.com/subscribe/token-plan?code=FHLniFJvhx&source=link",
+    "firstMonthPrice": 422.1,
+    "monthlyPrice": 469,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 4690,
+    "models": [
+      "MiniMax-M3",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 15000,
+    "weeklyRequests": 150000,
+    "monthlyRequests": 600000,
+    "tokenLimit": 7100,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 7100,
+    "note": "• 当前公开订阅档位\n• 官方月 Token 上限约 7100M（≈71 亿，M3 与 M2.7 共享池）\n• 套餐额度受 5 小时窗口与周窗口控制"
+  },
+  {
+    "vendor": "阿里·百炼",
+    "plan": "Lite",
+    "type": "Coding Plan",
+    "rating": 4,
+    "tags": [
+      "性价比高用量足"
+    ],
+    "link": "https://bailian.console.aliyun.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Qwen-3.6-Plus",
+      "Qwen-3.5-Plus",
+      "MiniMax-M2.5",
+      "GLM-5",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 40,
+    "measuredWeeklyTokenLimit": 300,
+    "measuredMonthlyTokenLimit": 600,
+    "note": ""
+  },
+  {
+    "vendor": "阿里·百炼",
+    "plan": "标准",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://bailian.console.aliyun.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 198,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Qwen-3.7-Max",
+      "Qwen-3.6-Plus",
+      "Qwen-3.6-Flash",
+      "Qwen-3.5-Plus",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "GLM-5.1",
+      "Kimi-K2.6"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 375,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 375,
+    "note": "• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.58/MToken，缓存¥0.32/MToken，输出¥9.54/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
+  },
+  {
+    "vendor": "阿里·百炼",
+    "plan": "Pro",
+    "type": "Coding Plan",
+    "rating": 4,
+    "tags": [
+      "性价比高用量足"
+    ],
+    "link": "https://bailian.console.aliyun.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Qwen-3.6-Plus",
+      "Qwen-3.5-Plus",
+      "MiniMax-M2.5",
+      "GLM-5",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 200,
+    "measuredWeeklyTokenLimit": 1500,
+    "measuredMonthlyTokenLimit": 3000,
+    "note": "开始限量购买了，不确定每天放不放，放多少"
+  },
+  {
+    "vendor": "阿里·百炼",
+    "plan": "高级",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://bailian.console.aliyun.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 698,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Qwen-3.7-Max",
+      "Qwen-3.6-Plus",
+      "Qwen-3.6-Flash",
+      "Qwen-3.5-Plus",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "GLM-5.1",
+      "Kimi-K2.6"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 1500,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 1500,
+    "note": "• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.40/MToken，缓存¥0.28/MToken，输出¥8.41/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
+  },
+  {
+    "vendor": "阿里·百炼",
+    "plan": "尊享",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://bailian.console.aliyun.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 1398,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Qwen-3.7-Max",
+      "Qwen-3.6-Plus",
+      "Qwen-3.6-Flash",
+      "Qwen-3.5-Plus",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "GLM-5.1",
+      "Kimi-K2.6"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 3750,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 3750,
+    "note": "• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.12/MToken，缓存¥0.22/MToken，输出¥6.74/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Lite",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://volcengine.com/L/-J5vsjYW7CQ/",
+    "firstMonthPrice": 9.4,
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0系列",
+      "Doubao-Seed-Code",
+      "MiniMax-M2.7",
+      "MiniMax-M3",
+      "Kimi-K2.6",
+      "GLM-5.1",
+      "DeepSeek-V3.2",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V4-Pro"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 6,
+    "measuredWeeklyTokenLimit": 42,
+    "measuredMonthlyTokenLimit": 83,
+    "note": "• 官方6.8-8.8期间2.5折活动（首两个月），可与9.5折邀请活动叠加（5.19-11.19）\n• DeepSeek-V4-Pro、GLM-5.1，Kimi-K2.6限时用量2.5倍"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Small",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://volcengine.com/L/-J5vsjYW7CQ/",
+    "firstMonthPrice": 9.9,
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0系列",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V3.2",
+      "MiniMax-M2.7",
+      "MiniMax-M3",
+      "GLM-5.1",
+      "Kimi-K2.6",
+      "Doubao-Seedream-5.0-lite"
+    ],
+    "fiveHoursRequests": 200,
+    "weeklyRequests": 700,
+    "monthlyRequests": 2000,
+    "tokenLimit": 22,
+    "benefits": [
+      "联网搜索 50次/月"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 22,
+    "note": "• 积分制 AFP 计费，见https://www.volcengine.com/docs/82379/2366394。\n• 按照最优模型9倍系数计算，1AFP=1111Token。\n• 有5小时、周、月的Token限制，没有请求次数限制，表格里按照最优模型，每次请求11KToken计算。"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Pro",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://volcengine.com/L/-J5vsjYW7CQ/",
+    "firstMonthPrice": 47.4,
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0系列",
+      "Doubao-Seed-Code",
+      "MiniMax-M2.7",
+      "MiniMax-M3",
+      "Kimi-K2.6",
+      "GLM-5.1",
+      "DeepSeek-V3.2",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V4-Pro"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": 28,
+    "measuredWeeklyTokenLimit": 208,
+    "measuredMonthlyTokenLimit": 416,
+    "note": "• 官方6.8-8.8期间2.5折活动（首两个月），可与9.5折邀请活动叠加（5.19-11.19）\n• DeepSeek-V4-Pro、GLM-5.1，Kimi-K2.6限时用量2.5倍"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Medium",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://volcengine.com/L/-J5vsjYW7CQ/",
+    "firstMonthPrice": 49.9,
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0系列",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V3.2",
+      "MiniMax-M2.7",
+      "MiniMax-M3",
+      "GLM-5.1",
+      "Kimi-K2.6",
+      "Doubao-Seedream-5.0-lite",
+      "Doubao-Seedance-2.0"
+    ],
+    "fiveHoursRequests": 1000,
+    "weeklyRequests": 3500,
+    "monthlyRequests": 10000,
+    "tokenLimit": 111,
+    "benefits": [
+      "联网搜索 150次/月"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 111,
+    "note": "• 积分制 AFP 计费，见https://www.volcengine.com/docs/82379/2366394。\n• 按照最优模型9倍系数计算，1AFP=1111Token。\n• 有5小时、周、月的Token限制，没有请求次数限制，表格里按照最优模型，每次请求11KToken计算。"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Large",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://volcengine.com/L/-J5vsjYW7CQ/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 500,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0系列",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V3.2",
+      "MiniMax-M2.7",
+      "MiniMax-M3",
+      "GLM-5.1",
+      "Kimi-K2.6",
+      "Doubao-Seedream-5.0-lite",
+      "Doubao-Seedance-2.0"
+    ],
+    "fiveHoursRequests": 2500,
+    "weeklyRequests": 8750,
+    "monthlyRequests": 25000,
+    "tokenLimit": 278,
+    "benefits": [
+      "联网搜索 400次/月"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 278,
+    "note": "• 积分制 AFP 计费，见https://www.volcengine.com/docs/82379/2366394。\n• 按照最优模型9倍系数计算，1AFP=1111Token。\n• 有5小时、周、月的Token限制，没有请求次数限制，表格里按照最优模型，每次请求11KToken计算。"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Max",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://volcengine.com/L/-J5vsjYW7CQ/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 1000,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0系列",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V3.2",
+      "MiniMax-M2.7",
+      "MiniMax-M3",
+      "GLM-5.1",
+      "Kimi-K2.6",
+      "Doubao-Seedream-5.0-lite",
+      "Doubao-Seedance-2.0"
+    ],
+    "fiveHoursRequests": 5000,
+    "weeklyRequests": 17500,
+    "monthlyRequests": 50000,
+    "tokenLimit": 556,
+    "benefits": [
+      "联网搜索 800次/月"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 556,
+    "note": "• 积分制 AFP 计费，见https://www.volcengine.com/docs/82379/2366394。\n• 按照最优模型9倍系数计算，1AFP=1111Token。\n• 有5小时、周、月的Token限制，没有请求次数限制，表格里按照最优模型，每次请求11KToken计算。"
+  },
+  {
+    "vendor": "百度·千帆",
+    "plan": "Lite",
+    "type": "Coding Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://console.bce.baidu.com/qianfan/resource/subscribe",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-5",
+      "GLM-5.1",
+      "Kimi-K2.5",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V4-Pro"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可以获得百度搜索额度，支持Baidu Search Skill"
+  },
+  {
+    "vendor": "百度·千帆",
+    "plan": "Pro",
+    "type": "Coding Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://console.bce.baidu.com/qianfan/resource/subscribe",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-5",
+      "GLM-5.1",
+      "Kimi-K2.5",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V4-Pro"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可以获得百度搜索额度，支持Baidu Search Skill"
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Lite",
+    "type": "Token Plan",
+    "rating": 2,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://cloud.tencent.com/product/lkeap",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 39,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "GLM-5.1",
+      "MiniMax-M2.7",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 35,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "注意此为TokenPlan，而非CodingPlan。35M(3500万) Tokens 额度，约 70 轮问答"
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Lite",
+    "type": "Coding Plan",
+    "rating": 3,
+    "tags": [
+      "性价比高用量足"
+    ],
+    "link": "https://cloud.tencent.com/product/lkeap",
+    "firstMonthPrice": 7.9,
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": ""
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Standard",
+    "type": "Token Plan",
+    "rating": 2,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://cloud.tencent.com/product/lkeap",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 99,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "GLM-5.1",
+      "MiniMax-M2.7",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 100,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "注意此为TokenPlan，而非CodingPlan。100M(1亿) Tokens 额度，可执行约 200 轮问答"
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Pro",
+    "type": "Coding Plan",
+    "rating": 3,
+    "tags": [
+      "性价比高用量足"
+    ],
+    "link": "https://cloud.tencent.com/product/lkeap",
+    "firstMonthPrice": 39.9,
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": ""
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Pro",
+    "type": "Token Plan",
+    "rating": 2,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://cloud.tencent.com/product/lkeap",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 299,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "GLM-5.1",
+      "MiniMax-M2.7",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 320,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "注意此为TokenPlan，而非CodingPlan。320M(3.2亿) Tokens 额度"
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Max",
+    "type": "Token Plan",
+    "rating": 2,
+    "tags": [
+      "模型强"
+    ],
+    "link": "https://cloud.tencent.com/product/lkeap",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 599,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "GLM-5.1",
+      "MiniMax-M2.7",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 650,
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "注意此为TokenPlan，而非CodingPlan。650M(6.5亿) Tokens 额度"
+  },
+  {
+    "vendor": "讯飞·星火",
+    "plan": "专业版",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://xinghuo.xfyun.cn/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 39,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-5.1",
+      "Kimi-K2.6",
+      "Qwen3.6-35B-A3B",
+      "MiniMax-M2.5",
+      "Kimi-K2.5",
+      "DeepSeek-V3.2"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "• GLM-5.1已恢复200K上下文\n• 讯飞实际可用量比较多"
+  },
+  {
+    "vendor": "讯飞·星火",
+    "plan": "高效版",
+    "type": "Coding Plan",
+    "rating": 5,
+    "tags": [
+      "模型强",
+      "性价比高用量足"
+    ],
+    "link": "https://xinghuo.xfyun.cn/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 199,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
+      "GLM-5.1",
+      "Kimi-K2.6",
+      "Qwen3.6-35B-A3B",
+      "GLM-5",
+      "MiniMax-M2.5",
+      "Kimi-K2.5",
+      "DeepSeek-V3.2"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "tokenLimit": "无限制",
+    "benefits": [],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": null,
+    "note": "• GLM-5.1已恢复200K上下文\n• 讯飞实际可用量比较多"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Lite",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://platform.xiaomimimo.com?ref=Q2RW6U",
+    "firstMonthPrice": 34.32,
+    "monthlyPrice": 39,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 411.84,
+    "models": [
+      "MiMo-V2.5-Pro",
+      "MiMo-V2.5",
+      "MiMo-V2.5-TTS",
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 108,
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 108,
+    "note": "• 4.1B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Standard",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://platform.xiaomimimo.com?ref=Q2RW6U",
+    "firstMonthPrice": 87.12,
+    "monthlyPrice": 99,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1045.44,
+    "models": [
+      "MiMo-V2.5-Pro",
+      "MiMo-V2.5",
+      "MiMo-V2.5-TTS",
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 290,
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 290,
+    "note": "• 11B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Pro",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://platform.xiaomimimo.com?ref=Q2RW6U",
+    "firstMonthPrice": 289.52,
+    "monthlyPrice": 329,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 3474.24,
+    "models": [
+      "MiMo-V2.5-Pro",
+      "MiMo-V2.5",
+      "MiMo-V2.5-TTS",
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 1002,
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 1002,
+    "note": "• 38B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Max",
+    "type": "Token Plan",
+    "rating": 3,
+    "tags": [],
+    "link": "https://platform.xiaomimimo.com?ref=Q2RW6U",
+    "firstMonthPrice": 579.92,
+    "monthlyPrice": 659,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 6959.04,
+    "models": [
+      "MiMo-V2.5-Pro",
+      "MiMo-V2.5",
+      "MiMo-V2.5-TTS",
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "tokenLimit": 2162,
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "measuredFiveHoursTokenLimit": null,
+    "measuredWeeklyTokenLimit": null,
+    "measuredMonthlyTokenLimit": 2162,
+    "note": "• 82B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+  }
+]
