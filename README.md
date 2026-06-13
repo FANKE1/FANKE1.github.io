@@ -1,6 +1,6 @@
 # AI Coding Plan 对比 · 9 大主流平台
 
-[![Live](https://img.shields.io/badge/site-fanke1.github.io-0f766e)](https://fanke1.github.io)
+[![Live](https://img.shields.io/badge/site-aicodingplan.site-0f766e)](https://aicodingplan.site)
 
 国内 9 大主流 AI 平台 Coding Plan / Token Plan 对比工具：
 
@@ -8,7 +8,7 @@
 
 ## 在线访问
 
-[https://fanke1.github.io](https://fanke1.github.io)
+[https://aicodingplan.site](https://aicodingplan.site)
 
 ## 文件结构
 
@@ -73,9 +73,9 @@ npx http-server -p 8000
 
 ## 部署
 
-push 到 main 分支即自动部署到 [fanke1.github.io](https://fanke1.github.io)。
+push 到 main 分支即自动部署到 [aicodingplan.site](https://aicodingplan.site)。
 
-GitHub 仓库 → Settings → Pages → Source: `Deploy from a branch / main / (root)`。
+GitHub 仓库 → Settings → Pages → Source: `Deploy from a branch / main / (root)` → Custom domain: `aicodingplan.site`。
 
 ## License
 
