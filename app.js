@@ -93,7 +93,7 @@ const RATING_GUIDE = '基准 3 颗星，价格优势/劣势 ±1 分，模型优�
 
 const state = {
   plans: [],
-  filter: { vendor: 'all', search: '' },
+  filter: { vendor: 'all', search: '', type: 'all' },
   sort: { col: null, dir: null }
 };
 
@@ -105,6 +105,20 @@ function escapeHtml(s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+// 动态更新日期
+function updateDates(dateStr) {
+  const pill = document.getElementById('updatePillText');
+  const footer = document.getElementById('footerUpdateDate');
+  if (pill) pill.textContent = `更新日期 ${dateStr} | 9 大主流平台首发`;
+  if (footer) footer.textContent = dateStr;
+}
+
+// 检测限时活动关键词
+function hasPromo(note) {
+  if (!note) return false;
+  return /活动|折|限时|促销|优惠期|倒计时/.test(note);
 }
 
 function isUsdVendor(v) {
@@ -180,6 +194,7 @@ function applyFilters(plans) {
   const q = (state.filter.search || '').trim().toLowerCase();
   return plans.filter(p => {
     if (state.filter.vendor !== 'all' && p.vendor !== state.filter.vendor) return false;
+    if (state.filter.type !== 'all' && p.type !== state.filter.type) return false;
     if (q) {
       const haystack = [
         p.vendor, p.plan, p.type,
@@ -267,7 +282,7 @@ function renderTable() {
 
     const measuredM = p.measuredMonthlyTokenLimit;
     const measuredCell = (measuredM == null)
-      ? '<span class="price-dash">-</span>'
+      ? '<span class="measured-pending">待测</span>'
       : `<span class="req-num">${measuredM}M</span>`;
 
     const brand = VENDOR_BRAND[p.vendor] || { slug: '', icon: '' };
@@ -292,7 +307,7 @@ function renderTable() {
       <td>${measuredCell}</td>
       <td>${tokenLimit}</td>
       <td class="benefit-cell">${benefits}</td>
-      <td class="note-cell">${escapeHtml(p.note || '-')}</td>
+      <td class="note-cell">${hasPromo(p.note) ? '⏰ ' : ''}${escapeHtml(p.note || '-')}</td>
     </tr>`;
   }).join('');
 }
@@ -329,15 +344,35 @@ function bindSearch() {
   });
 }
 
+function bindTypeFilter() {
+  document.querySelectorAll('.type-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.filter.type = btn.dataset.type;
+      document.querySelectorAll('.type-filter-btn').forEach(b =>
+        b.classList.toggle('active', b.dataset.type === state.filter.type));
+      renderTable();
+    });
+  });
+}
+
 // ─── 启动 ─────────────────────────────────────────────
 
 async function init() {
   try {
     const res = await fetch('plans.json', { cache: 'no-store' });
-    state.plans = await res.json();
+    const data = await res.json();
+    // 兼容：支持旧版纯数组格式和新版 {meta, plans} 格式
+    if (Array.isArray(data)) {
+      state.plans = data;
+    } else {
+      state.plans = data.plans || [];
+      if (data.meta && data.meta.lastUpdated) {
+        updateDates(data.meta.lastUpdated);
+      }
+    }
   } catch (e) {
     console.error('Failed to load plans.json:', e);
-    document.getElementById('tbody').innerHTML = `<tr><td colspan="12">
+    document.getElementById('tbody').innerHTML = `<tr><td colspan="16">
       <div class="empty">⚠️ 数据加载失败，请检查 plans.json</div></td></tr>`;
     return;
   }
@@ -345,6 +380,7 @@ async function init() {
   renderRecs();
   bindSort();
   bindSearch();
+  bindTypeFilter();
   renderTable();
 }
 
