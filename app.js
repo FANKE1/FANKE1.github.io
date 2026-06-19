@@ -164,17 +164,38 @@ function stars(n) {
 function renderVendorBar() {
   const root = document.getElementById('vendorBar');
   const items = ['all', ...VENDOR_ORDER];
+  // 当前应用了搜索/类型筛选后的套餐数（vendor 计数始终基于当前 type+search 上下文，
+  // 这样切换 Coding/Token 时各家平台的计数会同步更新；自身 vendor 筛选不参与计数）
+  const ctxFilter = { ...state.filter, vendor: 'all' };
+  const ctx = state.plans.filter(p => {
+    if (ctxFilter.type !== 'all' && p.type !== ctxFilter.type) return false;
+    const q = (ctxFilter.search || '').trim().toLowerCase();
+    if (q) {
+      const hay = [p.vendor, p.plan, p.type, ...(p.models || []), ...(p.benefits || []), ...(p.tags || []), p.note || ''].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  const counts = ctx.reduce((m, p) => (m[p.vendor] = (m[p.vendor] || 0) + 1, m), {});
+  const totalCount = ctx.length;
+
   root.innerHTML = items.map(v => {
     const brand = VENDOR_BRAND[v];
     const isActive = state.filter.vendor === v;
     if (v === 'all') {
-      return `<button class="chip ${isActive ? 'active' : ''}" data-vendor="all">全部</button>`;
+      return `<button class="chip ${isActive ? 'active' : ''}" data-vendor="all">
+        <span>全部</span>
+        <span class="chip-count">${totalCount}</span>
+      </button>`;
     }
     const slug = brand ? brand.slug : '';
     const icon = brand ? brand.icon : '';
-    return `<button class="chip chip-vendor v-${slug} ${isActive ? 'active' : ''}" data-vendor="${escapeHtml(v)}">
+    const c = counts[v] || 0;
+    const dim = c === 0 ? ' chip-empty' : '';
+    return `<button class="chip chip-vendor v-${slug} ${isActive ? 'active' : ''}${dim}" data-vendor="${escapeHtml(v)}">
       <span class="chip-logo">${escapeHtml(icon)}</span>
       <span>${escapeHtml(v)}</span>
+      <span class="chip-count">${c}</span>
     </button>`;
   }).join('');
   root.querySelectorAll('.chip').forEach(btn => {
@@ -214,23 +235,32 @@ function applySort(plans) {
   if (!col || !dir) return plans;
   const numericCols = new Set([
     'firstMonthPrice', 'monthlyPrice', 'quarterlyPrice', 'yearlyPrice',
-    'fiveHoursRequests', 'weeklyRequests', 'monthlyRequests', 'rating'
+    'fiveHoursRequests', 'weeklyRequests', 'monthlyRequests', 'rating',
+    'measuredMonthlyTokenLimit'
   ]);
   const sorted = [...plans];
+  // 缺失值约定：无论升降序都沉到末尾，避免 "-" 在升序时排在 0 之前误导用户
+  const isMissing = (v) => v == null || v === '-' || v === '' ||
+    (typeof v === 'string' && (v.includes('未公开') || v.includes('无限')));
   sorted.sort((a, b) => {
     let av = a[col], bv = b[col];
+    const aMiss = isMissing(av);
+    const bMiss = isMissing(bv);
+    if (aMiss && bMiss) return 0;
+    if (aMiss) return 1;
+    if (bMiss) return -1;
     if (numericCols.has(col)) {
-      av = (av == null || isNaN(av)) ? -Infinity : Number(av);
-      bv = (bv == null || isNaN(bv)) ? -Infinity : Number(bv);
-    } else {
-      av = String(av ?? '');
-      bv = String(bv ?? '');
-      const r = av.localeCompare(bv, 'zh-CN');
-      return dir === 'asc' ? r : -r;
+      const an = Number(av), bn = Number(bv);
+      const aBad = isNaN(an), bBad = isNaN(bn);
+      if (aBad && bBad) return 0;
+      if (aBad) return 1;
+      if (bBad) return -1;
+      if (an < bn) return dir === 'asc' ? -1 : 1;
+      if (an > bn) return dir === 'asc' ? 1 : -1;
+      return 0;
     }
-    if (av < bv) return dir === 'asc' ? -1 : 1;
-    if (av > bv) return dir === 'asc' ? 1 : -1;
-    return 0;
+    const r = String(av).localeCompare(String(bv), 'zh-CN');
+    return dir === 'asc' ? r : -r;
   });
   return sorted;
 }
@@ -242,6 +272,22 @@ function renderTable() {
 
   document.getElementById('statsCount').textContent = sorted.length;
   document.getElementById('statsTotal').textContent = `/ ${state.plans.length}`;
+
+  // 类型筛选按钮里的计数：基于当前 vendor + search 上下文（type 自身不参与）
+  const typeCtx = state.plans.filter(p => {
+    if (state.filter.vendor !== 'all' && p.vendor !== state.filter.vendor) return false;
+    const q = (state.filter.search || '').trim().toLowerCase();
+    if (q) {
+      const hay = [p.vendor, p.plan, p.type, ...(p.models || []), ...(p.benefits || []), ...(p.tags || []), p.note || ''].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  const typeCounts = { all: typeCtx.length, 'Coding Plan': 0, 'Token Plan': 0 };
+  for (const p of typeCtx) typeCounts[p.type] = (typeCounts[p.type] || 0) + 1;
+  document.querySelectorAll('.type-filter-count').forEach(el => {
+    el.textContent = typeCounts[el.dataset.countType] ?? 0;
+  });
 
   if (sorted.length === 0) {
     tbody.innerHTML = `<tr><td colspan="16"><div class="empty">
@@ -261,7 +307,17 @@ function renderTable() {
     const firstRaw = (p.firstMonthPrice == null || p.firstMonthPrice === '-' || p.firstMonthPrice === '')
       ? p.monthlyPrice
       : p.firstMonthPrice;
-    const firstMonth = priceCell(firstRaw, cur, '/首月', 'price-first');
+    let firstMonth = priceCell(firstRaw, cur, '/首月', 'price-first');
+    // 当首月价显著低于月费时，附加一个折扣徽章；阈值留 0.5% 余量避免浮点误差
+    if (typeof firstRaw === 'number' && typeof p.monthlyPrice === 'number'
+        && firstRaw > 0 && p.monthlyPrice > 0 && firstRaw < p.monthlyPrice * 0.995) {
+      const ratio = firstRaw / p.monthlyPrice;
+      const discount = Math.round(ratio * 100) / 10; // 0.235 -> 2.4
+      const label = discount < 1
+        ? `${(ratio * 100).toFixed(0)}%`
+        : `${Number.isInteger(discount) ? discount : discount.toFixed(1)}折`;
+      firstMonth += `<span class="discount-badge" title="首月相对月费 ${(ratio * 100).toFixed(1)}%">${label}</span>`;
+    }
     const monthly = priceCell(p.monthlyPrice, cur, '/月', 'price-monthly');
     const quarterly = priceCell(p.quarterlyPrice, cur, '/季', 'price-plain');
     const yearly = priceCell(p.yearlyPrice, cur, '/年', 'price-plain');
@@ -334,14 +390,34 @@ function bindSort() {
 
 function bindSearch() {
   const input = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('searchClear');
   let timer = null;
+  const apply = () => {
+    state.filter.search = input.value;
+    if (clearBtn) clearBtn.hidden = !input.value;
+    renderVendorBar();
+    renderTable();
+  };
   input.addEventListener('input', () => {
     clearTimeout(timer);
-    timer = setTimeout(() => {
-      state.filter.search = input.value;
-      renderTable();
-    }, 120);
+    timer = setTimeout(apply, 120);
   });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && input.value) {
+      e.preventDefault();
+      input.value = '';
+      clearTimeout(timer);
+      apply();
+    }
+  });
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      input.focus();
+      clearTimeout(timer);
+      apply();
+    });
+  }
 }
 
 function bindTypeFilter() {
@@ -350,6 +426,7 @@ function bindTypeFilter() {
       state.filter.type = btn.dataset.type;
       document.querySelectorAll('.type-filter-btn').forEach(b =>
         b.classList.toggle('active', b.dataset.type === state.filter.type));
+      renderVendorBar();
       renderTable();
     });
   });

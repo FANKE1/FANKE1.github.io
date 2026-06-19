@@ -233,13 +233,41 @@ a:hover { text-decoration: underline; }
   max-width: 520px;
 }
 
-.search svg {
+.search svg.search-icon {
   position: absolute;
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--text-faint);
 }
+
+/* 搜索框右侧清空按钮 */
+.search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(23, 32, 51, 0.08);
+  color: var(--text-muted);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+
+.search-clear:hover {
+  background: rgba(15, 118, 110, 0.18);
+  color: var(--accent-2);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.search-clear[hidden] { display: none; }
 
 .search input {
   width: 100%;
@@ -249,7 +277,7 @@ a:hover { text-decoration: underline; }
   );
   border: 1px solid rgba(255, 255, 255, 0.95);
   border-radius: var(--radius-pill);
-  padding: 14px 20px 14px 48px;
+  padding: 14px 44px 14px 48px;
   font-size: 14px;
   color: var(--text);
   outline: none;
@@ -318,6 +346,44 @@ a:hover { text-decoration: underline; }
   color: white;
   box-shadow: 0 8px 20px rgba(15, 118, 110, 0.35);
   transform: translateY(-1px);
+}
+
+/* chip 上的套餐计数小徽章 */
+.chip-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  padding: 0 6px;
+  height: 18px;
+  margin-left: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  background: rgba(23, 32, 51, 0.08);
+  color: var(--text-muted);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-feature-settings: 'tnum';
+  transition: background 0.18s, color 0.18s;
+}
+
+.chip:hover .chip-count {
+  background: rgba(15, 118, 110, 0.12);
+  color: var(--accent-2);
+}
+
+.chip.active .chip-count {
+  background: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 当前上下文下没有匹配套餐的平台 chip 整体压暗 */
+.chip.chip-empty:not(.active) {
+  opacity: 0.42;
+}
+
+.chip.chip-empty:not(.active) .chip-count {
+  background: rgba(23, 32, 51, 0.05);
 }
 
 /* 平台 chip 带 logo */
@@ -423,6 +489,29 @@ a:hover { text-decoration: underline; }
   color: #fff;
   border-color: transparent;
   box-shadow: 0 2px 8px rgba(13, 148, 136, 0.25);
+}
+
+/* 类型筛选按钮里的计数（小数字胶囊） */
+.type-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  padding: 0 5px;
+  height: 16px;
+  margin-left: 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  border-radius: 999px;
+  background: rgba(23, 32, 51, 0.08);
+  color: var(--text-muted);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+.type-filter-btn.active .type-filter-count {
+  background: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /* 实测Token"待测"标识 */
@@ -847,6 +936,23 @@ tbody tr:last-child td { border-bottom: none; }
 .price-first { color: var(--good); font-weight: 700; font-size: 16px; }
 .price-monthly { color: var(--purple); font-weight: 700; font-size: 16px; }
 .price-plain { color: var(--text); font-weight: 600; font-size: 14.5px; }
+
+/* 首月折扣徽章：贴在首月价旁边 */
+.discount-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: white;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  vertical-align: 2px;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25);
+  white-space: nowrap;
+}
 
 .price-unit {
   color: var(--text-faint);

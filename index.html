@@ -31,10 +31,15 @@
   <!-- 搜索 -->
   <section class="search-wrap">
     <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
         <circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path>
       </svg>
-      <input id="searchInput" type="text" placeholder="搜索平台、套餐或模型...">
+      <input id="searchInput" type="text" placeholder="搜索平台、套餐或模型... （ESC 清空）">
+      <button id="searchClear" class="search-clear" type="button" aria-label="清空搜索" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+          <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </section>
 
@@ -44,9 +49,9 @@
   <!-- 统计 -->
   <div class="stats">显示 <strong id="statsCount">0</strong> <span id="statsTotal">/ 0</span> 个套餐
     <span class="type-filters">
-      <button class="type-filter-btn active" data-type="all">全部</button>
-      <button class="type-filter-btn" data-type="Coding Plan">Coding Plan</button>
-      <button class="type-filter-btn" data-type="Token Plan">Token Plan</button>
+      <button class="type-filter-btn active" data-type="all">全部 <span class="type-filter-count" data-count-type="all">0</span></button>
+      <button class="type-filter-btn" data-type="Coding Plan">Coding Plan <span class="type-filter-count" data-count-type="Coding Plan">0</span></button>
+      <button class="type-filter-btn" data-type="Token Plan">Token Plan <span class="type-filter-count" data-count-type="Token Plan">0</span></button>
     </span>
   </div>
 
