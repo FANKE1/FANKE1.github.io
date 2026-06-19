@@ -111,7 +111,7 @@ function escapeHtml(s) {
 function updateDates(dateStr) {
   const pill = document.getElementById('updatePillText');
   const footer = document.getElementById('footerUpdateDate');
-  if (pill) pill.textContent = `更新日期 ${dateStr} | 9 大主流平台首发`;
+  if (pill) pill.textContent = `更新日期 ${dateStr} | 9 大主流平台对比`;
   if (footer) footer.textContent = dateStr;
 }
 
