@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026.6.19",
+    "lastUpdated": "2026.6.20",
     "version": 2
   },
   "plans": [
@@ -110,6 +110,7 @@
     "quarterlyPrice": "-",
     "yearlyPrice": 468,
     "models": [
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Kimi-K2.5",
       "Kimi-K2"
@@ -122,7 +123,7 @@
     "measuredFiveHoursTokenLimit": 15,
     "measuredWeeklyTokenLimit": 21,
     "measuredMonthlyTokenLimit": 84,
-    "note": "Agent 4 倍速"
+    "note": "Agent 4 倍速；官方主推 Kimi-K2.7 Code"
   },
   {
     "vendor": "Kimi",
@@ -138,6 +139,7 @@
     "quarterlyPrice": "-",
     "yearlyPrice": 948,
     "models": [
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Kimi-K2.5",
       "Kimi-K2"
@@ -166,6 +168,7 @@
     "quarterlyPrice": "-",
     "yearlyPrice": 1908,
     "models": [
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Kimi-K2.5",
       "Kimi-K2"
@@ -180,7 +183,7 @@
     "measuredFiveHoursTokenLimit": 65,
     "measuredWeeklyTokenLimit": 357,
     "measuredMonthlyTokenLimit": 1428,
-    "note": "20 倍额度"
+    "note": "20 倍额度；Kimi Claw 现已并入会员配额，不再单独发放"
   },
   {
     "vendor": "Kimi",
@@ -196,6 +199,7 @@
     "quarterlyPrice": "-",
     "yearlyPrice": 6708,
     "models": [
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Kimi-K2.5",
       "Kimi-K2"
@@ -210,7 +214,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "60 倍额度"
+    "note": "60 倍额度；Kimi Claw 现已并入会员配额，不再单独发放"
   },
   {
     "vendor": "MiniMax",
@@ -419,9 +423,9 @@
     "vendor": "阿里·百炼",
     "plan": "Lite",
     "type": "Coding Plan",
-    "rating": 4,
+    "rating": 2,
     "tags": [
-      "性价比高用量足"
+      "已停售"
     ],
     "link": "https://bailian.console.aliyun.com/",
     "firstMonthPrice": "-",
@@ -443,7 +447,7 @@
     "measuredFiveHoursTokenLimit": 40,
     "measuredWeeklyTokenLimit": 300,
     "measuredMonthlyTokenLimit": 600,
-    "note": ""
+    "note": "• ⚠️ 已停售：2026-03-20 起停止新购，2026-04-13 起停止续费/升级\n• 已购用户可继续使用至到期，需继续使用请订阅 Pro 档"
   },
   {
     "vendor": "阿里·百炼",
@@ -458,13 +462,19 @@
     "yearlyPrice": "-",
     "models": [
       "Qwen-3.7-Max",
+      "Qwen-3.7-Plus",
       "Qwen-3.6-Plus",
       "Qwen-3.6-Flash",
-      "Qwen-3.5-Plus",
-      "MiniMax-M2.5",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
+      "GLM-5.2",
       "GLM-5.1",
-      "Kimi-K2.6"
+      "GLM-5",
+      "Kimi-K2.7-Code",
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -474,7 +484,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 375,
-    "note": "• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.58/MToken，缓存¥0.32/MToken，输出¥9.54/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
+    "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.58/MToken，缓存¥0.32/MToken，输出¥9.54/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 限时活动：qwen3.7-max Credits 消耗减半（至 2026-06-22）"
   },
   {
     "vendor": "阿里·百炼",
@@ -519,13 +529,19 @@
     "yearlyPrice": "-",
     "models": [
       "Qwen-3.7-Max",
+      "Qwen-3.7-Plus",
       "Qwen-3.6-Plus",
       "Qwen-3.6-Flash",
-      "Qwen-3.5-Plus",
-      "MiniMax-M2.5",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
+      "GLM-5.2",
       "GLM-5.1",
-      "Kimi-K2.6"
+      "GLM-5",
+      "Kimi-K2.7-Code",
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -535,7 +551,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 1500,
-    "note": "• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.40/MToken，缓存¥0.28/MToken，输出¥8.41/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
+    "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.40/MToken，缓存¥0.28/MToken，输出¥8.41/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 限时活动：qwen3.7-max Credits 消耗减半（至 2026-06-22）"
   },
   {
     "vendor": "阿里·百炼",
@@ -550,13 +566,19 @@
     "yearlyPrice": "-",
     "models": [
       "Qwen-3.7-Max",
+      "Qwen-3.7-Plus",
       "Qwen-3.6-Plus",
       "Qwen-3.6-Flash",
-      "Qwen-3.5-Plus",
-      "MiniMax-M2.5",
+      "DeepSeek-V4-Pro",
+      "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
+      "GLM-5.2",
       "GLM-5.1",
-      "Kimi-K2.6"
+      "GLM-5",
+      "Kimi-K2.7-Code",
+      "Kimi-K2.6",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -566,7 +588,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 3750,
-    "note": "• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.12/MToken，缓存¥0.22/MToken，输出¥6.74/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
+    "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.12/MToken，缓存¥0.22/MToken，输出¥6.74/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 限时活动：qwen3.7-max Credits 消耗减半（至 2026-06-22）\n• 另有「共享用量包」¥5000/份，含 625K Credits（≈9375M Token），跨坐席共享"
   },
   {
     "vendor": "字节·方舟",
@@ -584,13 +606,15 @@
     "models": [
       "Doubao-Seed-2.0系列",
       "Doubao-Seed-Code",
-      "MiniMax-M2.7",
       "MiniMax-M3",
+      "MiniMax-M2.7",
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
+      "GLM-5.2",
       "GLM-5.1",
-      "DeepSeek-V3.2",
+      "DeepSeek-V4-Pro",
       "DeepSeek-V4-Flash",
-      "DeepSeek-V4-Pro"
+      "DeepSeek-V3.2"
     ],
     "fiveHoursRequests": 1200,
     "weeklyRequests": 9000,
@@ -600,7 +624,7 @@
     "measuredFiveHoursTokenLimit": 6,
     "measuredWeeklyTokenLimit": 42,
     "measuredMonthlyTokenLimit": 83,
-    "note": "• 官方6.8-8.8期间2.5折活动（首两个月），可与9.5折邀请活动叠加（5.19-11.19）\n• DeepSeek-V4-Pro、GLM-5.1，Kimi-K2.6限时用量2.5倍"
+    "note": "• 官方 6.8-8.8 期间 2.5 折活动（首两个月，仅 Agent Plan Small/Medium 明确适用）\n• 限时 2.5x 倍率（6.10-6.30）模型已更新为：DeepSeek-V4-Pro、Kimi-K2.6、Kimi-K2.7-Code、GLM-5.2"
   },
   {
     "vendor": "字节·方舟",
@@ -620,9 +644,11 @@
       "DeepSeek-V4-Pro",
       "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
-      "MiniMax-M2.7",
       "MiniMax-M3",
+      "MiniMax-M2.7",
+      "GLM-5.2",
       "GLM-5.1",
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Doubao-Seedream-5.0-lite"
     ],
@@ -654,13 +680,15 @@
     "models": [
       "Doubao-Seed-2.0系列",
       "Doubao-Seed-Code",
-      "MiniMax-M2.7",
       "MiniMax-M3",
+      "MiniMax-M2.7",
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
+      "GLM-5.2",
       "GLM-5.1",
-      "DeepSeek-V3.2",
+      "DeepSeek-V4-Pro",
       "DeepSeek-V4-Flash",
-      "DeepSeek-V4-Pro"
+      "DeepSeek-V3.2"
     ],
     "fiveHoursRequests": 6000,
     "weeklyRequests": 45000,
@@ -670,7 +698,7 @@
     "measuredFiveHoursTokenLimit": 28,
     "measuredWeeklyTokenLimit": 208,
     "measuredMonthlyTokenLimit": 416,
-    "note": "• 官方6.8-8.8期间2.5折活动（首两个月），可与9.5折邀请活动叠加（5.19-11.19）\n• DeepSeek-V4-Pro、GLM-5.1，Kimi-K2.6限时用量2.5倍"
+    "note": "• 官方 6.8-8.8 期间 2.5 折活动（首两个月，仅 Agent Plan Small/Medium 明确适用）\n• 限时 2.5x 倍率（6.10-6.30）模型已更新为：DeepSeek-V4-Pro、Kimi-K2.6、Kimi-K2.7-Code、GLM-5.2"
   },
   {
     "vendor": "字节·方舟",
@@ -690,9 +718,11 @@
       "DeepSeek-V4-Pro",
       "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
-      "MiniMax-M2.7",
       "MiniMax-M3",
+      "MiniMax-M2.7",
+      "GLM-5.2",
       "GLM-5.1",
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Doubao-Seedream-5.0-lite",
       "Doubao-Seedance-2.0"
@@ -727,9 +757,11 @@
       "DeepSeek-V4-Pro",
       "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
-      "MiniMax-M2.7",
       "MiniMax-M3",
+      "MiniMax-M2.7",
+      "GLM-5.2",
       "GLM-5.1",
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Doubao-Seedream-5.0-lite",
       "Doubao-Seedance-2.0"
@@ -764,9 +796,11 @@
       "DeepSeek-V4-Pro",
       "DeepSeek-V4-Flash",
       "DeepSeek-V3.2",
-      "MiniMax-M2.7",
       "MiniMax-M3",
+      "MiniMax-M2.7",
+      "GLM-5.2",
       "GLM-5.1",
+      "Kimi-K2.7-Code",
       "Kimi-K2.6",
       "Doubao-Seedream-5.0-lite",
       "Doubao-Seedance-2.0"
@@ -811,7 +845,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可以获得百度搜索额度，支持Baidu Search Skill"
+    "note": "• 使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可获得百度搜索额度，支持 Baidu Search Skill\n• 控制台已上线 Token Plan 入口（团队订阅/席位制），具体价格需登录查看"
   },
   {
     "vendor": "百度·千帆",
@@ -841,7 +875,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可以获得百度搜索额度，支持Baidu Search Skill"
+    "note": "• 使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可获得百度搜索额度，支持 Baidu Search Skill\n• 控制台已上线 Token Plan 入口（团队订阅/席位制），具体价格需登录查看"
   },
   {
     "vendor": "腾讯云",
@@ -870,7 +904,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "注意此为TokenPlan，而非CodingPlan。35M(3500万) Tokens 额度，约 70 轮问答"
+    "note": "注意此为TokenPlan，而非CodingPlan。35M(3500万) Tokens 额度，约 70 轮问答\n• ⚠️ LKEAP 产品页已迁移至 ADP（智能体开发平台），新平台改为 PU 计费；老套餐能否继续续订需登录控制台核实"
   },
   {
     "vendor": "腾讯云",
@@ -900,7 +934,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": ""
+    "note": "⚠️ LKEAP 产品页已迁移至 ADP（智能体开发平台），新平台改为 PU 计费；老套餐能否继续续订需登录控制台核实"
   },
   {
     "vendor": "腾讯云",
@@ -929,7 +963,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "注意此为TokenPlan，而非CodingPlan。100M(1亿) Tokens 额度，可执行约 200 轮问答"
+    "note": "注意此为TokenPlan，而非CodingPlan。100M(1亿) Tokens 额度，可执行约 200 轮问答\n• ⚠️ LKEAP 产品页已迁移至 ADP（智能体开发平台），新平台改为 PU 计费；老套餐能否继续续订需登录控制台核实"
   },
   {
     "vendor": "腾讯云",
@@ -959,7 +993,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": ""
+    "note": "⚠️ LKEAP 产品页已迁移至 ADP（智能体开发平台），新平台改为 PU 计费；老套餐能否继续续订需登录控制台核实"
   },
   {
     "vendor": "腾讯云",
@@ -988,7 +1022,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "注意此为TokenPlan，而非CodingPlan。320M(3.2亿) Tokens 额度"
+    "note": "注意此为TokenPlan，而非CodingPlan。320M(3.2亿) Tokens 额度\n• ⚠️ LKEAP 产品页已迁移至 ADP（智能体开发平台），新平台改为 PU 计费；老套餐能否继续续订需登录控制台核实"
   },
   {
     "vendor": "腾讯云",
@@ -1017,7 +1051,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": null,
-    "note": "注意此为TokenPlan，而非CodingPlan。650M(6.5亿) Tokens 额度"
+    "note": "注意此为TokenPlan，而非CodingPlan。650M(6.5亿) Tokens 额度\n• ⚠️ LKEAP 产品页已迁移至 ADP（智能体开发平台），新平台改为 PU 计费；老套餐能否继续续订需登录控制台核实"
   },
   {
     "vendor": "讯飞·星火",
@@ -1100,9 +1134,8 @@
     "models": [
       "MiMo-V2.5-Pro",
       "MiMo-V2.5",
-      "MiMo-V2.5-TTS",
-      "MiMo-V2-Pro",
-      "MiMo-V2-Omni"
+      "MiMo-V2.5-ASR",
+      "MiMo-V2.5-TTS"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -1114,7 +1147,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 108,
-    "note": "• 4.1B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+    "note": "• 4.1B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高\n• ⚠️ V2 系列（V2-Pro/V2-Omni/V2-TTS）将于 2026-06-30 00:00 停用，已自动转发至 V2.5"
   },
   {
     "vendor": "小米·MiMo",
@@ -1130,9 +1163,8 @@
     "models": [
       "MiMo-V2.5-Pro",
       "MiMo-V2.5",
-      "MiMo-V2.5-TTS",
-      "MiMo-V2-Pro",
-      "MiMo-V2-Omni"
+      "MiMo-V2.5-ASR",
+      "MiMo-V2.5-TTS"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -1144,7 +1176,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 290,
-    "note": "• 11B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+    "note": "• 11B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高\n• ⚠️ V2 系列（V2-Pro/V2-Omni/V2-TTS）将于 2026-06-30 00:00 停用，已自动转发至 V2.5"
   },
   {
     "vendor": "小米·MiMo",
@@ -1160,9 +1192,8 @@
     "models": [
       "MiMo-V2.5-Pro",
       "MiMo-V2.5",
-      "MiMo-V2.5-TTS",
-      "MiMo-V2-Pro",
-      "MiMo-V2-Omni"
+      "MiMo-V2.5-ASR",
+      "MiMo-V2.5-TTS"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -1174,7 +1205,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 1002,
-    "note": "• 38B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+    "note": "• 38B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高\n• ⚠️ V2 系列（V2-Pro/V2-Omni/V2-TTS）将于 2026-06-30 00:00 停用，已自动转发至 V2.5"
   },
   {
     "vendor": "小米·MiMo",
@@ -1190,9 +1221,8 @@
     "models": [
       "MiMo-V2.5-Pro",
       "MiMo-V2.5",
-      "MiMo-V2.5-TTS",
-      "MiMo-V2-Pro",
-      "MiMo-V2-Omni"
+      "MiMo-V2.5-ASR",
+      "MiMo-V2.5-TTS"
     ],
     "fiveHoursRequests": "无限制",
     "weeklyRequests": "无限制",
@@ -1204,7 +1234,7 @@
     "measuredFiveHoursTokenLimit": null,
     "measuredWeeklyTokenLimit": null,
     "measuredMonthlyTokenLimit": 2162,
-    "note": "• 82B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高"
+    "note": "• 82B Credits，无5小时限额，支持集中消耗\n• MiMo-V2.5-Pro：缓存 2.5 Credits/Token，输入 300 Credits/Token，输出 600 Credits/Token\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%×300 + 99×90%×2.5 + 1×600 = 3792.75 Credits，即 1B Credits≈26.37M Token。表格按 MiMo-V2.5-Pro 口径算，MiMo-V2.5 实际更高\n• ⚠️ V2 系列（V2-Pro/V2-Omni/V2-TTS）将于 2026-06-30 00:00 停用，已自动转发至 V2.5"
   }
   ]
 }
