@@ -678,6 +678,33 @@ thead th.col-note {
   min-width: 360px;
 }
 
+/* 首列（平台）粘性：横向滚动时始终可见，便于参照当前行属于哪家平台 */
+thead th:first-child,
+tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+/* 首列表头需要在深色背景之上、且不被斑马纹透出 */
+thead th:first-child {
+  z-index: 4;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.98) 100%);
+}
+/* 首列单元格用不透明背景盖住滚动经过的内容；斑马纹色与原 odd/even 保持一致 */
+tbody tr:nth-child(odd) td:first-child {
+  background: rgba(255, 252, 245, 0.97);
+}
+tbody tr:nth-child(even) td:first-child {
+  background: rgba(254, 247, 238, 0.97);
+}
+tbody tr:hover td:first-child {
+  background: rgba(238, 242, 255, 0.98);
+}
+/* sticky 首列右侧加一条极淡分隔线，避免与滚动内容粘连 */
+tbody td:first-child {
+  box-shadow: inset -1px 0 0 rgba(99, 102, 241, 0.08);
+}
+
 tbody td {
   padding: 14px 18px;
   border-bottom: 1px solid rgba(99, 102, 241, 0.06);
@@ -1300,4 +1327,26 @@ tbody tr:last-child td { border-bottom: none; }
   .table-section { padding: 0 12px 24px; }
   thead th, tbody td { padding: 12px 14px; font-size: 12px; }
   .float-feedback { right: 12px; bottom: 14px; min-height: 36px; padding: 0 12px; font-size: 12px; }
+
+  /* 移动端隐藏次要列，只保留：平台/套餐/类型/跳转/首月/月价/模型/月请求/Token/备注
+     隐藏：季(7) 年(8) 5h(10) 周(11) 月实测(13) 权益(15) */
+  table { min-width: 900px; }
+  thead th:nth-child(7), tbody td:nth-child(7),
+  thead th:nth-child(8), tbody td:nth-child(8),
+  thead th:nth-child(10), tbody td:nth-child(10),
+  thead th:nth-child(11), tbody td:nth-child(11),
+  thead th:nth-child(13), tbody td:nth-child(13),
+  thead th:nth-child(15), tbody td:nth-child(15) {
+    display: none;
+  }
+  .model-cell { min-width: 200px; max-width: 280px; }
+  .note-cell { width: 220px; min-width: 220px; max-width: 220px; }
+}
+
+@media (max-width: 480px) {
+  /* 极窄屏再隐藏类型与跳转列，只留核心价格与模型信息 */
+  thead th:nth-child(3), tbody td:nth-child(3),
+  thead th:nth-child(4), tbody td:nth-child(4) {
+    display: none;
+  }
 }

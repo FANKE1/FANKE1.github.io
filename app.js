@@ -36,65 +36,15 @@ function modelSeriesClass(name) {
   return '';
 }
 
-// 推荐位文案（参考原作者整理后的口径，去掉外部跳转）
-const RECOMMENDATIONS = [
-  {
-    name: '智谱AI',
-    rating: 5,
-    reasons: [
-      '支持 GLM-5.1 模型，模型能力 T0 级别。+1',
-      '提供免费 MCP 次数。+1',
-      '尤其适合代码场景，Opus 平替。',
-      '需要抢购，能抢到就赚到。'
-    ]
-  },
-  {
-    name: '讯飞·星火',
-    rating: 5,
-    reasons: [
-      '支持 GLM-5.1、DeepSeek-V4-Pro/Flash。+1',
-      '无忧版即支持 Qwen3.5-35B-A3B（20M/日）。+0.5',
-      '抢不到智谱的最佳平替，无需抢购，39 元即提供 GLM-5.1。+0.5'
-    ]
-  },
-  {
-    name: 'MiniMax',
-    rating: 5,
-    reasons: [
-      '支持 MiniMax-M3 模型。+1',
-      '额度依然最高，适合养龙虾或日常编程任务。+0.5',
-      '支持多模态。+0.5'
-    ]
-  },
-  {
-    name: '字节·方舟',
-    rating: 5,
-    reasons: [
-      '前两月 2.5 折活动，叠加用量 2.5 倍活动，性价比突出。+1',
-      '支持 GLM-5.1、DeepSeek-V4-Pro/Flash、MiniMax-M3、Kimi-K2.6。+1',
-      '唯一同时支持 GLM、DeepSeek-V4-Pro/Flash、MiniMax、Kimi 四家最新模型的平台。'
-    ]
-  },
-  {
-    name: 'Kimi',
-    rating: 3.5,
-    reasons: [
-      '支持 Kimi-K2.6，现在模型竞争力偏弱。+0.5',
-      '提供实验性专业数据库功能。+0.5',
-      '用量官方未说明，实测比其他家少一些。-1',
-      '模型能力均衡，支持多模态（图像输入）。+0.5'
-    ]
-  }
-];
-
-const RATING_GUIDE = '基准 3 颗星，价格优势/劣势 ±1 分，模型优势或独占模型 +1 分，其他优势 +1 分。Token Plan 因性价比较低暂不推荐，能买 Coding Plan 尽量买 Coding Plan。';
+// 推荐区块已移除（保留 VENDOR_ORDER 供筛选栏/默认排序使用）
 
 // ─── 状态 ─────────────────────────────────────────────
 
 const state = {
   plans: [],
   filter: { vendor: 'all', search: '', type: 'all' },
-  sort: { col: null, dir: null }
+  // 默认按连续包月价升序，让低价档先出现（用户最常按价格横向比较）
+  sort: { col: 'monthlyPrice', dir: 'asc' }
 };
 
 // ─── 工具 ─────────────────────────────────────────────
@@ -205,10 +155,6 @@ function renderVendorBar() {
       renderTable();
     });
   });
-}
-
-function renderRecs() {
-  // 推荐区块已移除
 }
 
 function applyFilters(plans) {
@@ -454,10 +400,14 @@ async function init() {
     return;
   }
   renderVendorBar();
-  renderRecs();
   bindSort();
   bindSearch();
   bindTypeFilter();
+  // 初始默认排序的表头视觉标记
+  if (state.sort.col && state.sort.dir) {
+    const th = document.querySelector(`thead th.sortable[data-col="${state.sort.col}"]`);
+    if (th) th.classList.add(`sort-${state.sort.dir}`);
+  }
   renderTable();
 }
 
