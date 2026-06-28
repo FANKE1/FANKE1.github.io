@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026.6.20",
+    "lastUpdated": "2026.6.28",
     "version": 2
   },
   "plans": [
@@ -483,7 +483,7 @@
       "measuredFiveHoursTokenLimit": null,
       "measuredWeeklyTokenLimit": null,
       "measuredMonthlyTokenLimit": 375,
-      "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.58/MToken，缓存¥0.32/MToken，输出¥9.54/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 限时活动：qwen3.7-max Credits 消耗减半（至 2026-06-22）"
+      "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.58/MToken，缓存¥0.32/MToken，输出¥9.54/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
     },
     {
       "vendor": "阿里·百炼",
@@ -546,7 +546,7 @@
       "measuredFiveHoursTokenLimit": null,
       "measuredWeeklyTokenLimit": null,
       "measuredMonthlyTokenLimit": 1500,
-      "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.40/MToken，缓存¥0.28/MToken，输出¥8.41/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 限时活动：qwen3.7-max Credits 消耗减半（至 2026-06-22）"
+      "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.40/MToken，缓存¥0.28/MToken，输出¥8.41/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算"
     },
     {
       "vendor": "阿里·百炼",
@@ -578,7 +578,7 @@
       "measuredFiveHoursTokenLimit": null,
       "measuredWeeklyTokenLimit": null,
       "measuredMonthlyTokenLimit": 3750,
-      "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.12/MToken，缓存¥0.22/MToken，输出¥6.74/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 限时活动：qwen3.7-max Credits 消耗减半（至 2026-06-22）\n• 另有「共享用量包」¥5000/份，含 625K Credits（≈9375M Token），跨坐席共享"
+      "note": "• 团队版坐席套餐，每坐席绑定一个成员/独立 API Key\n• Qwen-3.6-Plus，输入5K Token/Credit，输入命中25K Token/Credit，输出0.83K Token/Credit。合输入¥1.12/MToken，缓存¥0.22/MToken，输出¥6.74/MToken\n• 按缓存命中率90%、输入输出99:1算：100 Token 约消耗 99×10%/5000 + 99×90%/25000 + 1/830 = 0.00675 Credit，即 1 Credit≈14.82K Token。表格按15K Token/Credit算\n• 另有「共享用量包」¥5000/份，含 625K Credits（≈9375M Token），跨坐席共享"
     },
     {
       "vendor": "字节·方舟",
